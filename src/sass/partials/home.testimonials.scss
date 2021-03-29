@@ -1,0 +1,45 @@
+#testimonials {
+	margin: 200px auto;
+	max-width: 1280px;
+	width: 100%;
+
+	.container-wrapper {
+		.title-container {
+			h3 {
+				font-size: calc(3vw + 1rem);
+			}
+		}
+
+		.testimonials-container {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			.card {
+				width: 340px;
+				padding: 20px;
+				font-family: "Proxima Nova", sans-serif;
+				text-align: center;
+
+				.card-image-container {
+					overflow: hidden;
+
+					img {
+						border-radius: 100%;
+						width: 50px;
+					}
+				}
+
+				h3 {
+					font-size: 20px;
+					margin-top: 10px;
+
+				}
+
+				p {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}

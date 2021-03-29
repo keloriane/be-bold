@@ -1,0 +1,35 @@
+{% extends getf('base') %}
+
+
+{% block body %}
+  <div class="home">
+    <div class="home__hero">
+      <div class="image__wrapper--background" style="background-image: url({{ Image(image).src}});background-size:cover;">
+        <div class="title-container">
+          <h1>
+            <div class="orange">
+              BeBold
+            </div>
+
+            <div class="blue">
+              you are
+            </div>
+
+            <div class="orange">
+              gold
+            </div>
+            </h1>
+        </div>
+        <div class="tagline">
+          <h3>{{title}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include getf('about') %}
+  {% include getf('home.mission') %}
+  {% include getf('home.activity') %}
+  {% include getf('home.boost') %}
+  {% include getf('home.testimonials') %}
+  {% include getf('home.form') %}
+{% endblock %}

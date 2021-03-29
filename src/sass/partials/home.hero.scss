@@ -1,0 +1,44 @@
+.home__hero {
+	width: 100vw;
+	min-height: auto;
+	height: 80vh;
+	background-color: #152565;
+	.image__wrapper--background {
+		width: 70%;
+		height: 100%;
+
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		background-size:cover;
+		.tagline {
+			h3 {
+				font-family: "Eczar" , sans-serif;
+				font-size: 30px;
+
+
+			}
+		}
+		.title-container {
+			h1 {
+				font-family: Eczar , serif;
+				font-style: normal;
+				font-weight: 800;
+				font-size: 67px;
+				line-height: 62px;
+				/* identical to box height, or 92% */
+
+				display: flex;
+				align-items: center;
+				text-align: center;
+				letter-spacing: -0.01em;
+				color: #E7650F;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+	}
+}

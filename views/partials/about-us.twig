@@ -1,0 +1,92 @@
+{% extends getf('base') %}
+
+
+{% block body %}
+
+<section id="about">
+  <div class="a-propos">
+    <div class="text-container">
+      <div class="title-container">
+        <h2 class="sf blue">{{ post.custom.title_about_up }} </h2>
+        <h2 class="sf orange">{{ post.custom.title_about_down }}</h2>
+      </div>
+      <div class="inner-text">
+        <p>
+            {{post.custom.about_text}}
+
+        </p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="{{ Image(post.custom.about_image).src }}" alt="">
+      <div class="text-layer">
+        <p>{{ post.custom.about_layer }} </p>
+      </div>
+    </div>
+
+  </div>
+  <div id="team" >
+    <div class="team-member manu">
+      <div class="image-container">
+
+
+        <img src="{{ Image(post.custom.manu_image).src }}" alt="">
+      </div>
+      <div class="text-container">
+        <div class="name">
+          <h2>{{ post.custom.manu_nom }}</h2>
+        </div>
+        <div class="text-container">
+          <p>
+              {{post.custom.manu_description}}
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="team-member mike">
+      <div class="image-container">
+
+        <img src="{{ Image(post.custom.mike_image).src }}" alt="">
+      </div>
+      <div class="text-container">
+        <div class="name">
+          <h2>{{ post.custom.mike_nom  }}</h2>
+        </div>
+        <div class="text-container">
+          <p>
+            {{post.custom.mike_description}}
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="a-propos">
+    <div class="text-container">
+      <div class="title-container">
+        <h2 class="sf blue">Comment ? </h2>
+      </div>
+      <div class="inner-text">
+        <p>
+          Le marché de l’emploi est plus que jamais lieu de concurrence, faire la différence est donc primordiale pour
+          décrocher le plus rapidement possible un emploi à hauteur de vos ambitions. Chez Be Bold, nous souhaitons
+          contribuer au développement de votre carrière et vous donner les moyens d’atteindre vos objectifs
+          professionnels !
+
+        </p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="{{ site.link }}/wp-content/uploads/2021/03/image-4-1.png" alt="">
+      <div class="text-layer">
+        <p>En combinant nos forces, nous avons créé Be Bold en vue d’amener un impact positif sur la société. Nous
+          sommes convaincus que, chacun à notre échelle, nous sommes capables d’amener notre pierre à l’édifice. </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

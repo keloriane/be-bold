@@ -1,0 +1,76 @@
+h1  h2 {
+	font-family: "Eczar" , serif;
+}
+p {
+	font-family: sans-serif;
+}
+.blue {
+	color: #152565;
+}
+.orange {
+	color: #E7650F;
+}
+p {
+	font-family: "Proxima Nova" , sans-serif;
+}
+
+.sf {
+	font-family: "Eczar" , serif;
+}
+.white {
+	color: #ffffff;
+}
+nav {
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	
+	ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		a {
+		font-family: "Proxima Nova" , sans-serif;
+			font-weight: 600;
+		color: #0A246A;
+			text-decoration: none;
+			&:hover {
+				color: #E7650F;
+			}
+		}
+	}
+ }
+
+footer {
+	height: 150px;
+	width: 100%;
+	background: #152466;
+	margin-top: 50px;
+	.footer-container {
+		height: 100%;
+		width: 95%;
+		margin: auto;
+		display: flex;
+		align-items: center;
+	}
+}
+.sub-button {
+	background: none;
+	border: 2px solid #E7650F;
+	width: 100px !important;
+	min-width: 100px !important;
+	height: 60px;
+	font-weight: 600;
+	color: #0A246A;
+	font-family: "Proxima Nova" , sans-serif;
+	text-transform: uppercase;
+	margin: auto;
+
+
+}

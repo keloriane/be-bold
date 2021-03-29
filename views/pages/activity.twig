@@ -1,0 +1,23 @@
+{% extends getf('base') %}
+
+
+{% block body %}
+  <section class="activity-container">
+    <div class="text-container">
+    <div class="title-container">
+      <h3>{{ activity.titletop }}</h3>
+      <h3 class="orange">{{ activity.titleBottom }}</h3>
+    </div>
+      <div class="inner-text">
+  <p>{{ activity.description }}</p>
+
+      </div>
+
+    </div>
+    <div class="image-container">
+  <img src="{{ Image(activity.custom.image).src }}" alt="">
+
+    </div>
+
+  </section>
+{% endblock %}

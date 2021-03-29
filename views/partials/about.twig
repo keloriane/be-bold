@@ -1,0 +1,40 @@
+<section id="parcours">
+
+  <div class=" info-container">
+    <div class="section-title blue">
+      <span class="indent">  <h2 class= "sf blue">Soyez</h2> </span>
+      <span> <h2 class="sf orange">Audacieux</h2> </span>
+    </div>
+
+    <div class="info-text">
+      <p>
+          {{home.a_propos}}
+      <div class="call-to-action">
+        <a href="" class=" orange">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 10.3988H10.4699M10.4699 10.3988V1.08191M10.4699 10.3988L2 1.08191" stroke="#F5DFB4" stroke-width="3.16492"/>
+          </svg>
+          En savoir plus
+        </a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="{{ Image(home.image_about).src }}" alt="">
+    </div>
+  </div>
+  <div class="text-container">
+    <div class="inner-text">
+      <p class="blue">
+        {{ home.about_left }}
+      </p>
+    </div>
+    <div class="inner-text">
+      <p>
+        {{ home.about_left_bottom }}
+       </p>
+    </div>
+
+
+  </div>
+</section>
+

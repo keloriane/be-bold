@@ -1,0 +1,124 @@
+#mission {
+	.container-mission {
+	display: flex;
+	gap: 25px;
+	justify-content: center;
+	align-items: center;
+		flex-wrap: wrap;
+		.text-container {
+			.inner-text {
+				width: 100%;
+				max-width: 425px;
+				p {
+					font-family: Proxima Nova , sans-serif;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 19.9288px;
+					line-height: 140%;
+					/* or 28px */
+					letter-spacing: 0.01em;
+
+					color: rgba(12, 27, 51, 0.7);
+				}
+			}
+		}
+		.image-container {
+			padding: 20px;
+			img {
+				max-width: 490px;
+				width: 100%;
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.boost {
+	width: 100%;
+	height: 561px;
+	position: relative;
+	display: flex;
+
+	.container-wrapper {
+		min-height: auto;
+		display: grid;
+		grid-template-columns: 3fr 1fr 3fr;
+		margin: auto;
+		align-items: center;
+
+	}
+
+	.logo-container {
+
+	}
+
+	.image-background, .background-layer {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-size: cover;
+		z-index: -1;
+		top: 0;
+		left: 0;
+
+	}
+
+	.image-background {
+		background-image: url("http://localhost/bebold-you-are-gold/wp-content/uploads/2021/03/image-5.png");
+	}
+
+	.background-layer {
+
+		background: rgba(21, 36, 102, 0.56);
+	}
+
+	.title-container {
+		h3 {
+			font-style: normal;
+			font-weight: 800;
+			font-size: 37.9598px;
+			line-height: 46px;
+			/* or 120% */
+
+			display: flex;
+			align-items: center;
+			letter-spacing: -0.01em;
+		}
+	}
+
+	.text-container {
+		p {
+			font-family: Proxima Nova, sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 19.0039px;
+			line-height: 26px;
+			/* or 137% */
+			display: flex;
+			align-items: center;
+			letter-spacing: -0.01em;
+			color: #FFFFFF;
+		}
+	}
+}
+
+
+@media (max-width:840px) {
+	.boost .container-wrapper {
+		grid-template-columns: 1fr;
+	}
+
+}
+
+
+
