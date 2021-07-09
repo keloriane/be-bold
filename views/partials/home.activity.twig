@@ -1,16 +1,49 @@
-<section class="product with-padding">
+{#<section class="product with-padding">
   <div class="title-container">
     <h2 class="sf blue">Nos activités</h2>
   </div>
   <div class="product-list-container">
-    {% for post in product %}
+   #}{# {% for post in product %}
       <a href="{{ post.link }}" data-color="#b3a8b3" data-imagelarge="{{ Image(post.custom.thumbnail).src }}"
          data-imagesmall="{{ Image(post.custom.thumbnail).src }}">{{ post.title }}</a>
+    {% endfor %}#}{#
+    {% for post in product %}
+
+
     {% endfor %}
   </div>
   <div class="portfolio__image--l">
     <div class="image_inside">
 
+    </div>
+  </div>
+</section>#}
+
+
+<section class="activity-section-home with-padding">
+  <div class="activity-list-container">
+    <div class="title-container">
+      <h2 class="sf blue">Nos activitées</h2>
+    </div>
+    <div class="activity-list-wrapper">
+
+      {% for post in product %}
+        <a href="{{ post.link }}" class="card__activity-wrapper" style="background-image: url({{ Image(post.custom.thumbnail).src }})">
+          <div class="card-absolute">
+
+          </div>
+          <div class="card-layer">
+            <div class="card_title">
+              <h3>{{ post.title }}</h3>
+            </div>
+            <div class="card__call-to-action">
+              <button>
+                en savoir plus
+              </button>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
     </div>
   </div>
 </section>

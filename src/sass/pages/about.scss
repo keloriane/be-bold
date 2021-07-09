@@ -10,6 +10,7 @@
 		padding: 10px;
 
 		.text-container {
+			margin-top: 40px;
 			.title-container {
 				margin-top: 15px;
 				margin-bottom: 15px;
@@ -104,6 +105,9 @@
 			.text-container {
 				width: 100%;
 				max-width: 578px;
+				.text-team {
+					margin-top: 40px;
+				}
 
 				p {
 					font-family: Proxima Nova;
@@ -145,6 +149,7 @@
 	margin: auto;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 
 	form {
 

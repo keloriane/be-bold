@@ -56,7 +56,18 @@ body {
 h2 {
 	font-size: calc(3vw + 1rem);
 }
-
+.inner-text {
+	font-family: Proxima Nova, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 161%;
+	letter-spacing: 0.01em;
+	color: rgba(12, 27, 51, 0.7);
+	ul {
+		list-style: disc;
+	}
+}
 
 
 

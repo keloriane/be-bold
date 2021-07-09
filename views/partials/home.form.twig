@@ -1,5 +1,9 @@
 <section id="form">
-  <form action="post">
+  <div class="title-container">
+    <h2 class="sf blue">Contactez</h2>
+    <h2 class="sf orange">Nous</h2>
+  </div>
+{#  <form action="post">
     <div class="name">
       <div class="block-input">
     <label for="nom">Nom</label>
@@ -27,5 +31,8 @@
 
     </div>
     <input type="submit" value="envoyer" class="sub-button">
-  </form>
+  </form>#}
+  {% filter shortcodes %}
+    [contact-form-7 id="28953" title="Contact form 1"]
+  {% endfilter %}
 </section>

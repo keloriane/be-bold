@@ -1,113 +1,113 @@
-.progressbar {
-	position: fixed;
-	top: 0;
-	left: 85%;
-	background-color: grey;
-	width: 1px;
-	z-index: 1;
+.activity-section-home {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+
+	.activity-list-container {
+		width: 100%;
+		max-width: 1280px;
+		margin: 80px auto;
+		.activity-list-wrapper {
+			margin: 80px auto;
+			display: flex;
+			gap: 4rem;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
 }
-section {
+
+.card__activity-wrapper {
+	width: 280px;
+	height: 367px;
+	background: rgba(21, 37, 101, 0.65);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 	position: relative;
-}
-.product-container {
-	background-color: pink;
-	.links-container {
-		ul {
-			list-style: none;
-			position: absolute;
-			li {
-				display: block;
-				user-select: none;
-				margin: 120px 0;
-				a {
-					font-family: "Eczar" , serif;
-					font-size: 50px;
-					text-decoration: none;
-					-webkit-text-stroke: 1px rgb(58 , 116 , 152);
-					color: transparent;
-					display: inline-block;
+	.card-absolute {
+		position: absolute;
+		background: rgba(21, 37, 101, 0.65);
+		width: 100%;
+		height: 100%;
+	}
+	.card-layer {
+		position: relative;
+		width: 85%;
+		border: 1px solid white;
+		height: 85%;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		z-index: 2;
+		.card__call-to-action {
+			button {
+				width: 168px;
+				height: 47px;
+				padding: 5px;
+				background: #E7650F;
+				margin-top: 40px;
+				font-family: Proxima Nova;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 15px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				letter-spacing: 0.04em;
+				color: #FFFFFF;
+				border: 1px solid white;
+				text-transform: uppercase;
 
-					&:hover {
-						color: rgb(58 , 116 , 152);
-
-					}
-				}
 			}
+		}
+
+		.card_title {
+			font-family: Proxima Nova;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 34px;
+			/* or 121% */
+
+			text-align: center;
+			letter-spacing: 0.04em;
+
+			color: #FFFFFF;
 		}
 	}
 }
 
 
-.product {
-	margin: 100px auto;
-	width: 80%;
-	.title-container {
-		margin-top: 100px;
-		margin-bottom: 100px;
+@media (max-width: 1200px) {
+	.activity-section-home .activity-list-container .activity-list-wrapper {
+		grid-template-columns: repeat(2, 1fr);
 	}
-	h2 {
-		text-align: center;
+	.card__activity-wrapper {
+		width: 342px;
 	}
 }
-.portfolio .chapter {
-	color: blue;
-	top: 0;
+@media (max-width: 760px) {
+	.card__activity-wrapper {
+		width: 280px;
+	}
 }
-.product-list-container {
-	display: flex;
-	flex-direction: column;
+@media (max-width: 625px) {
+	.activity-section-home .activity-list-container .activity-list-wrapper {
+		grid-template-columns: 1fr;
+	}
+	.card__activity-wrapper {
+		width: 340px;
+	}
 }
-.product-list-container a {
-	font-family: "Proxima Nova", serif;
-	color: transparent;
-	-webkit-text-stroke: 1px #152565;
-	text-decoration: none;
-	font-size: 5.4vw;
-	margin: auto;
-	letter-spacing: 0.2vw;
-	line-height: 1.5;
-	font-weight: 800;
-}
-.product-list-container a:hover {
-	z-index: 1;
-}
-.portfolio__image--l,
-.portfolio__image--s  {
-	pointer-events: none; /* important to be able to hover over links under the image */
-	position: absolute;
-	width: 29vw;
-	top: 17vh;
-	left: 34vw;
-	/* overflow: hidden; */
-	visibility: hidden;
-	z-index: -1;
-}
-.portfolio__image--l {
-	padding-bottom: 41.66vw;
-}
-.portfolio__image--s {
-	width: 15vw;
-	top: 25vh;
-	left: 54vw;
-	padding-bottom: 20vw;
-}
-.image_inside {
-	position: absolute;
-	top: -4%;
-	left: -29%;
-	width: 94%;
-	height: 60%;
-	background-size: 125%;
-	background-position: center center;
-}
-.fill-background {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-}
+@media (max-width: 380px) {
 
-
-
-
+	.card__activity-wrapper {
+		width: 280px;
+	}
+}
